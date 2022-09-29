@@ -320,7 +320,7 @@ li:hover {
 
 /* segunda barra desplegable */
 
-.cont-menu .cont-enlace .enlace-1 { /* listo  */
+.cont-menu .cont-enlace .enlace1 { /* listo  */
     font-size: 20px;
     height: 40px;
     width: auto;
@@ -335,7 +335,7 @@ li:hover {
     padding-left: 1vw;
 }
 
-.cont-menu .cont-enlace .enlace-1 .icono {
+.cont-menu .cont-enlace .enlace1 .icono {
     background-color: white;
     color:#1b396a;
     font-weight: bold;
@@ -347,16 +347,16 @@ li:hover {
 
 
 /* ocultar segunda barra */
-.cont-menu .cont-enlace .enlace-1  {
+.cont-menu .cont-enlace .enlace1  {
     height: 0;
     overflow: hidden;
 }
 
-.cont-menu .cont-enlace .animation {
+.cont-menu .cont-enlace .animation11 {
     height: 100%;
 }
 
-.cont-menu .cont-enlace .enlace-1 .anexos-contend  {
+.cont-menu .cont-enlace .enlace1 .anexos-contend  {
     display: block;
     padding: 10px 15px;
     text-decoration: none;
@@ -365,7 +365,7 @@ li:hover {
     background-color: #ffffff;
 }
 
-.cont-menu .cont-enlace .enlace-1 .anexos-contend:hover {
+.cont-menu .cont-enlace .enlace1 .anexos-contend:hover {
     background-color: #BDBDBD;
     color: black;
 }
@@ -404,7 +404,7 @@ li:hover {
     overflow: hidden;
 }
 
-.cont-menu .cont-enlace .animation1 {
+.cont-menu .cont-enlace .animation11 {
     height: 100%;
 }
 
@@ -448,6 +448,7 @@ li:hover {
 .titulo {
     text-align: center;
 }
+
 
 
 @media (max-width: 840px) {
