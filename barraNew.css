@@ -137,6 +137,18 @@ li:hover {
     display: block;
 }
 
+/* diseño titulo */
+.titulo-one {
+    background-color: white;
+    padding: 50px;
+    color: #616161;
+}
+
+.titulo {
+    text-align: center;
+}
+
+
 
 /* SECCION NOTICIAS */
 .post-list {
@@ -318,109 +330,7 @@ li:hover {
     color: black;
 }
 
-/* segunda barra desplegable */
 
-.cont-menu .cont-enlace .enlace1 { /* listo  */
-    font-size: 20px;
-    height: 40px;
-    width: auto;
-    background-color: #616161;
-    display: flex;
-    color: white;
-    cursor: pointer;
-    user-select: none;
-}
-
-.parrafo {
-    padding-left: 1vw;
-}
-
-.cont-menu .cont-enlace .enlace1 .icono {
-    background-color: white;
-    color:#1b396a;
-    font-weight: bold;
-    font-size: 18px;
-    text-align: center;
-    width: 26px;
-    border-radius: 5px;
-}
-
-
-/* ocultar segunda barra */
-.cont-menu .cont-enlace .enlace1  {
-    height: 0;
-    overflow: hidden;
-}
-
-.cont-menu .cont-enlace .animation11 {
-    height: 100%;
-}
-
-.cont-menu .cont-enlace .enlace1 .anexos-contend  {
-    display: block;
-    padding: 10px 15px;
-    text-decoration: none;
-    font-size: 20px;
-    color: black;
-    background-color: #ffffff;
-}
-
-.cont-menu .cont-enlace .enlace1 .anexos-contend:hover {
-    background-color: #BDBDBD;
-    color: black;
-}
-
-/* tercera seccion deplegable */
-.cont-menu .cont-enlace .enlace-2 { /* listo  */
-    font-size: 10px;
-    height: 40px;
-    width: auto;
-    margin-top: 5px;
-    background-color: black;
-    display: flex;
-    color: white;
-    cursor: pointer;
-    user-select: none;
-}
-
-.parrafo {
-    padding-left: 1vw;
-}
-
-.cont-menu .cont-enlace .enlace-2 .icono {
-    background-color: white;
-    color:#1b396a;
-    font-weight: bold;
-    font-size: 18px;
-    text-align: center;
-    width: 26px;
-    border-radius: 5px;
-}
-
-
-/* ocultar tercera barra */
-.cont-menu .cont-enlace .enlace-2  {
-    height: 0;
-    overflow: hidden;
-}
-
-.cont-menu .cont-enlace .animation11 {
-    height: 100%;
-}
-
-.cont-menu .cont-enlace .enlace-2 .anexos-contend  {
-    display: block;
-    padding: 10px 15px;
-    text-decoration: none;
-    font-size: 20px;
-    color: black;
-    background-color: #ffffff;
-}
-
-.cont-menu .cont-enlace .enlace-2 .anexos-contend:hover {
-    background-color: #BDBDBD;
-    color: black;
-}
 /* bontones descarga */
 
 .des-button {
@@ -438,16 +348,10 @@ li:hover {
     height: 23px;
     border-bottom: 1px solid #BDBDBD;
 }
-/* diseño titulo */
-.titulo-one {
-    background-color: white;
-    padding: 50px;
-    color: #616161;
-}
 
-.titulo {
-    text-align: center;
-}
+
+/* Sistema de comentarios */
+
 
 
 
