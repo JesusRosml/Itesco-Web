@@ -352,7 +352,11 @@ li:hover {
 
 /* Sistema de comentarios */
 
-
+.comentarios {
+    background: #1b396a;
+    width: 100%;
+    height: 200xp;
+}
 
 
 @media (max-width: 840px) {
