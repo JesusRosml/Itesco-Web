@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    text-align: center;
     text-decoration: none;
 }
 
@@ -270,6 +271,7 @@ li:hover {
 
 .cont-menu {
     width: 1000px;
+    height: 10px;
     margin: 20px auto;
     background-color: white;
 }
@@ -353,11 +355,37 @@ li:hover {
 /* Sistema de comentarios */
 
 .comentarios {
+    text-align: center;
     background: #1b396a;
     width: 100%;
+    align-items: center;
+    padding: 0px 0;
     height: 200xp;
+    border-radius: 20px;
+    justify-content: center;
 }
 
+.comentarios-2 {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background:  #1b396a;
+    padding-left: 2vw;
+    padding: 10px 0;
+    font-size: 12px;
+}
+
+.Title-quejas {
+    color: black;
+}
+
+.name2 {
+    outline: none;
+    border-radius: 5px;
+    border: 0;
+    background-color: #616161;
+    height: 50px;
+}
 
 @media (max-width: 840px) {
     .content {
