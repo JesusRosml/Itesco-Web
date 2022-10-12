@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="barraNew.css">
 
 </head>
-<body>
+<body onload="limpiarContenido()">
 
      <!-- BANNER PAGINA ITESCO2 -->
    <div class="Ban-itesco">
@@ -24,61 +24,61 @@
     <header>
         <nav>
             <ul class="Ul-one"> <!-- Listo --> 
-                <li class="logo"><a href="#"></a></li> <!-- Boton_Inicio -->
+                <li class="logo"><a href="http://itesco.edu.mx/Web/mensaje-del-director/"></a></li> <!-- Boton_Inicio -->
                 <li class="Inf-esc"><b>Proceso Academico</b>
-                    <ul class="Ul-two">
-                        <li class="li-one">Actualizacion Docente</li> 
-                        <li class="li-one">Evaluacion Docente</li>
-                        <li class="li-one">Formatos para actos recepcional</li>
-                        <li class="li-one"><a href="#">Gestion del curso</a></li>
-                        <li class="li-one"><a href="#"> Inscripcion</a></li>
-                        <li class="li-one"><a href="#">Laboratorios de quimica y bioquimica</a></li>
-                        <li class="li-one"><a href="#">Reinscripcion</a></li>
-                        <li class="li-one"><a href="#">Residencia Profesional</a></li>
+                    <ul class="Ul-two" id="pa">
+                        <li class="li-one" id="pa1" onclick="procesoAcademico(this.id)">Actualizacion Docente</li> 
+                        <li class="li-one" id="pa2" onclick="procesoAcademico(this.id)">Evaluacion Docente</li>
+                        <li class="li-one" id="pa3" onclick="procesoAcademico(this.id)">Formatos para actos recepcional</li>
+                        <li class="li-one" id="pa4" onclick="procesoAcademico(this.id)"><a>Gestion del curso</a></li>
+                        <li class="li-one" id="pa5" onclick="procesoAcademico(this.id)"><a> Inscripcion</a></li>
+                        <li class="li-one" id="pa6" onclick="procesoAcademico(this.id)"><a>Laboratorios de quimica y bioquimica</a></li>
+                        <li class="li-one" id="pa7" onclick="procesoAcademico(this.id)"><a>Reinscripcion</a></li>
+                        <li class="li-one" id="pa8" onclick="procesoAcademico(this.id)"><a>Residencia Profesional</a></li>
                     </ul>
                 </li>
     
                 <li class="Inf-esc"><b>Proceso de vinculacion</b>
                     <ul class="Ul-two">
-                        <li class="li-one"">Promocion cultural, deportiva y recreativa</li>
-                        <li><a href="#">Promocion y difusion</a></li>
-                        <li><a href="">Servicio social</a></li>
-                        <li><a href="">Visitas Industriales</a></li>
+                        <li class="li-one" id="pv1" onclick="procesodeVinculacion(this.id)">Promocion cultural, deportiva y recreativa</li>
+                        <li id="pv2" onclick="procesodeVinculacion(this.id)"><a>Promocion y difusion</a></li>
+                        <li id="pv3" onclick="procesodeVinculacion(this.id)"><a>Servicio social</a></li>
+                        <li id="pv4" onclick="procesodeVinculacion(this.id)"><a>Visitas Industriales</a></li>
                     </ul>
                 </li>
     
                 <li class="Inf-esc"><b>Proceso de planeacion</b>
                     <ul class="Ul-two">
-                        <li><a href="#">POA </a></li>
-                        <li><a href="#">PTA</a></li>
-                        <li><a href="#">REPOA</a></li>
+                        <li id="pp1" onclick="procesodePlaneacion(this.id)"><a>POA </a></li>
+                        <li id="pp2" onclick="procesodePlaneacion(this.id)"><a>PTA</a></li>
+                        <li id="pp3" onclick="procesodePlaneacion(this.id)"><a>REPOA</a></li>
                     </ul>
                 </li>
 
                 <li class="Inf-esc"><b>PROCESO ADMINISTRACION DE RECURSOS </b>
                 
                     <ul class="Ul-two">
-                        <li><a href="#">Adquisiciones y almacen</a></li>
-                        <li><a href="#">Ambiente de trabajo</a></li>
-                        <li><a href="#">Capacitacion de personal</a></li>
-                        <li><a href="#">Capacitacion de ingresos propios</a></li>
-                        <li><a href="#">Mantenimiento de infraestructura y equipo</a></li>
-                        <li><a href="#">Reclutamiento, seleccion y contratacion de personal</a></li>
-                        <li><a href="#">Reembolso de arancel</a></li>
+                        <li id="par1" onclick="procesoAdministraciondeRecursos(this.id)"><a>Adquisiciones y almacen</a></li>
+                        <li id="par2" onclick="procesoAdministraciondeRecursos(this.id)"><a>Ambiente de trabajo</a></li>
+                        <li id="par3" onclick="procesoAdministraciondeRecursos(this.id)"><a>Capacitacion de personal</a></li>
+                        <li id="par4" onclick="procesoAdministraciondeRecursos(this.id)"><a>Capacitacion de ingresos propios</a></li>
+                        <li id="par5" onclick="procesoAdministraciondeRecursos(this.id)"><a>Mantenimiento de infraestructura y equipo</a></li>
+                        <li id="par6" onclick="procesoAdministraciondeRecursos(this.id)"><a>Reclutamiento, seleccion y contratacion de personal</a></li>
+                        <li id="par7" onclick="procesoAdministraciondeRecursos(this.id)"><a>Reembolso de arancel</a></li>
                     </ul>
                 </li>
 
                 <li class="Inf-esc"><b>Procesos de calidad</b>
 
                     <ul class="Ul-two">
-                        <li><a href="#">Acciones correctivas</a></li>
-                        <li><a href="#">Atencion de quejas </a></li>
-                        <li><a href="#">Auditorias internas</a></li>
-                        <li><a href="#">Control de servico no conforme</a></li>
-                        <li><a href="#">Gestion de riesgo</a></li>
-                        <li><a href="#">Informacion documentada</a></li>
-                        <li><a href="#">Preparacion y respuesta ante emergencias</a></li>
-                        <li><a href="#">Revision por direccion</a></li>
+                        <li id="pc1" onclick="procesodeCalidad(this.id)"><a>Acciones correctivas</a></li>
+                        <li id="pc2" onclick="procesodeCalidad(this.id)"><a>Atencion de quejas </a></li>
+                        <li id="pc3" onclick="procesodeCalidad(this.id)"><a>Auditorias internas</a></li>
+                        <li id="pc4" onclick="procesodeCalidad(this.id)"><a>Control de servico no conforme</a></li>
+                        <li id="pc5" onclick="procesodeCalidad(this.id)"><a>Gestion de riesgo</a></li>
+                        <li id="pc6" onclick="procesodeCalidad(this.id)"><a>Informacion documentada</a></li>
+                        <li id="pc7" onclick="procesodeCalidad(this.id)"><a>Preparacion y respuesta ante emergencias</a></li>
+                        <li id="pc8" onclick="procesodeCalidad(this.id)"><a>Revision por direccion</a></li>
                     </ul>
                 </li>
             </ul>
@@ -87,159 +87,72 @@
 
         <!-- Titulo -->
 
-       <div class="titulo-one"><div class="titulo"><h1>Sistema de Gestión de la Calidad SGC</h1></div></div>
+       <div class="titulo-one"><div class="titulo"><h1 id="titulo">Sistema de Gestión de la Calidad SGC</h1></div></div>
 
 
-         <!-- Sistema_Descargas -->
+        <!-- Sistema_Descargas -->
+        <!--<div class="cont-menu" id="contenido-menu">-->
 
-         <div class="cont-menu">
-            <div class="cont-enlace">
-
+         <div class="cont-menu" id="sistema_descarga">
+            <div class="cont-enlace" id="contenido_descarga">
                 <div class="opcion">
                     <p class="icono"> + </p>
-                    <p class="parrafo">Manual del Sistema de Gestión de Calidad del Tecnológico Nacional de México (SGC)</p>
+                    <p class="parrafo">PROCEDIMIENTO</p>
                 </div>
 
                 <div class="enlace">
 
                     <table>
                         <tr>
-                            <td class="td-1""><b>Anexo 1:</b> Política</td>
-                            <td><a class="des-button" download="prueba" href="Img/TecNM-CA-MC-001-A01.pdf"> TecNM-CA-MC-001-A01</a> </p> </td>
+                            <td class="td-1"><b>Anexo 1:</b> Procedimiento para la Promo Cultura, Deportiva y Recreativa</td>
+                            <td><a class="des-button" target="_blank" href="Proceso de Calidad/Proceso de Vinculacion/Promocion Cultural, Deportiva y Recreativa/Procedimiento/ITESCO-VI-PO-003 Procedimiento para la Promo Cultura_Deportiva_Recreativa.pdf">ITESCO-VI-PO-003</a> </p> </td>
                         </tr>
-    
-                        <tr>
-                            <td class="td-1"><b>Anexo 2:</b> Organigrama de la Alta Dirección para el SGC</td>
-                            <td><a class="des-button" download="prueba" href="Img/TecNM-CA-MC-001-A01.pdf"> TecNM-CA-MC-001-A01</a> </p> </td>
-                        </tr>
-    
-                        <tr>
-                            <td class="td-1"><b>Anexo 4:</b> Plan Rector de Calidad</td>
-                            <td><a class="des-button" download="prueba" href="Img/TecNM-CA-MC-001-A01.pdf"> TecNM-CA-MC-001-A01</a> </p> </td>
-                        </tr>
-    
-                        <tr>
-                            <td class="td-1"><b>Anexo 5:</b> Plan de Calidad del Servicio Educativo</td>
-                            <td><a class="des-button" download="prueba" href="Img/TecNM-CA-MC-001-A01.pdf"> TecNM-CA-MC-001-A01</a> </p> </td>
-                        </tr>
-    
-                        <tr>
-                            <td class="td-1"><b>Anexo 6:</b> Mapa e interacción de procesos</td>
-                            <td><a class="des-button" download="prueba" href="Img/TecNM-CA-MC-001-A01.pdf"> TecNM-CA-MC-001-A01</a> </p> </td>
-                        </tr>
-    
-                        <tr>
-                            <td class="td-1"><b>Anexo 7:</b> Lista Maestra de Documentos Internos Controlados</td>
-                            <td><a class="des-button" download="prueba" href="Img/TecNM-CA-MC-001-A01.pdf"> TecNM-CA-MC-001-A01</a> </p> </td>
-                        </tr>
-    
-                        <tr>
-                            <td class="td-1"><b>Anexo 8:</b> Lista Maestra de Documentos de origen externo</td>
-                            <td><a class="des-button" download="prueba" href="Img/TecNM-CA-MC-001-A01.pdf"> TecNM-CA-MC-001-A01</a> </p> </td>
-                        </tr>
-    
-                        <tr>
-                            <td class="td-1"><b>Anexo 9:</b> Lista maestra para el control de los registros</td>
-                            <td><a class="des-button" download="prueba" href="Img/TecNM-CA-MC-001-A01.pdf"> TecNM-CA-MC-001-A01</a> </p> </td>
-                        </tr>
-    
-                        <tr>
-                            <td class="td-1"><b>Anexo 10:</b> Responsabilidad y Autoridad del SGC</td>
-                            <td><a class="des-button" download="prueba" href="Img/TecNM-CA-MC-001-A01.pdf"> TecNM-CA-MC-001-A01</a> </p> </td>
-                        </tr>
-    
-                        <tr>
-                            <td class="td-1"><b>Anexo 11:</b> Procesos Externos del SGC</td>
-                            <td><a class="des-button" download="prueba" href="Img/TecNM-CA-MC-001-A01.pdf"> TecNM-CA-MC-001-A01</a> </p> </td>
-                        </tr>
-    
-                        <tr>
-                            <td class="td-1"><b>Anexo 12:</b> Lista de Institutos que integran la Organización</td>
-                            <td><a class="des-button" download="prueba" href="Img/TecNM-CA-MC-001-A01.pdf"> TecNM-CA-MC-001-A01</a> </p> </td>
-                        </tr>
-                        <tr>
-                            <td class="td-1">Programa de Trabajo del SGC Multisitios</td>
-                            <td><a class="des-button" download="prueba" href="Img/TecNM-CA-MC-001-A01.pdf"> TecNM-CA-MC-001-A01</a> </p> </td>
-                        </tr>
-    
                     </table>
                 </div>
-
             </div>   
 
 
-            <div class="cont-enlace">
+            <div class="cont-enlace" id="contenido_descarga2">
 
                 <div class="opcion">
                     <p class="icono"> + </p>
-                    <p class="parrafo">Proceso Estratégico de Calidad</p>
+                    <p class="parrafo">REGISTROS</p>
                 </div>
 
                 <div class="enlace">
 
                     <table>
                         <tr>
-                            <td class="td-1""><b>Anexo 1:</b> Política</td>
-                            <td><a class="des-button" download="prueba" href="Img/TecNM-CA-MC-001-A01.pdf"> TecNM-CA-MC-001-A01</a> </p> </td>
+                            <td class="td-1""><b>Anexo 1:</b> Cedula de Inscripcion Act. Cultural, Deportiva y Recreativa</td>
+                            <td><a class="des-button" download href="Proceso de Calidad/Proceso de Vinculacion/Promocion Cultural, Deportiva y Recreativa/Registros/ITESCO-VI-PO-003-01 Cedula de Inscripcion Act_Cultural_Deportiva_Recreativa.DOC">ITESCO-VI-PO-003-01</a> </p> </td>
                         </tr>
     
                         <tr>
-                            <td class="td-1"><b>Anexo 2:</b> Organigrama de la Alta Dirección para el SGC</td>
-                            <td><a class="des-button" download="prueba" href="Img/TecNM-CA-MC-001-A01.pdf"> TecNM-CA-MC-001-A01</a> </p> </td>
+                            <td class="td-1"><b>Anexo 2:</b> Formato para Cedula de Resultados de Act. Extraescolar</td>
+                            <td><a class="des-button" download href="Proceso de Calidad/Proceso de Vinculacion/Promocion Cultural, Deportiva y Recreativa/Registros/ITESCO-VI-PO-003-02-Formato para Cedula de Resultados de Act Extraesc.doc">ITESCO-VI-PO-003-02</a> </p> </td>
                         </tr>
     
                         <tr>
-                            <td class="td-1"><b>Anexo 4:</b> Plan Rector de Calidad</td>
-                            <td><a class="des-button" download="prueba" href="Img/TecNM-CA-MC-001-A01.pdf"> TecNM-CA-MC-001-A01</a> </p> </td>
+                            <td class="td-1"><b>Anexo 3:</b>Formato de Donacion</td>
+                            <td><a class="des-button" download="prueba" href="Proceso de Calidad/Proceso de Vinculacion/Promocion Cultural, Deportiva y Recreativa/Registros/ITESCO-VI-PO-003-03-Formato de Donacion.doc">ITESCO-VI-PO-003-03</a> </p> </td>
                         </tr>
     
                         <tr>
-                            <td class="td-1"><b>Anexo 5:</b> Plan de Calidad del Servicio Educativo</td>
-                            <td><a class="des-button" download="prueba" href="Img/TecNM-CA-MC-001-A01.pdf"> TecNM-CA-MC-001-A01</a> </p> </td>
+                            <td class="td-1"><b>Anexo 4:</b>Boleta de acreditacion de extraescolares</td>
+                            <td><a class="des-button" download="prueba" href="Proceso de Calidad/Proceso de Vinculacion/Promocion Cultural, Deportiva y Recreativa/Registros/ITESCO-VI-PO-003-04-Boleta de acreditacion de extraescolares.docx">ITESCO-VI-PO-003-04</a> </p> </td>
                         </tr>
     
                         <tr>
-                            <td class="td-1"><b>Anexo 6:</b> Mapa e interacción de procesos</td>
-                            <td><a class="des-button" download="prueba" href="Img/TecNM-CA-MC-001-A01.pdf"> TecNM-CA-MC-001-A01</a> </p> </td>
+                            <td class="td-1"><b>Anexo 5:</b>Constancia de liberación de actividades extraescolares</td>
+                            <td><a class="des-button" download="prueba" href="Proceso de Calidad/Proceso de Vinculacion/Promocion Cultural, Deportiva y Recreativa/Registros/ITESCO-VI-PO-003-05-Constancia de liberación de actividades extraescolares.doc">ITESCO-VI-PO-003-05</a> </p> </td>
                         </tr>
     
                         <tr>
-                            <td class="td-1"><b>Anexo 7:</b> Lista Maestra de Documentos Internos Controlados</td>
-                            <td><a class="des-button" download="prueba" href="Img/TecNM-CA-MC-001-A01.pdf"> TecNM-CA-MC-001-A01</a> </p> </td>
+                            <td class="td-1"><b>Anexo 6:</b>Formato Registro de Asistencia</td>
+                            <td><a class="des-button" download="prueba" href="Proceso de Calidad/Proceso de Vinculacion/Promocion Cultural, Deportiva y Recreativa/Registros/ITESCO-VI-PO-003-06 Formato Registro de Asistencia.xls">ITESCO-VI-PO-003-06</a> </p> </td>
                         </tr>
-    
-                        <tr>
-                            <td class="td-1"><b>Anexo 8:</b> Lista Maestra de Documentos de origen externo</td>
-                            <td><a class="des-button" download="prueba" href="Img/TecNM-CA-MC-001-A01.pdf"> TecNM-CA-MC-001-A01</a> </p> </td>
-                        </tr>
-    
-                        <tr>
-                            <td class="td-1"><b>Anexo 9:</b> Lista maestra para el control de los registros</td>
-                            <td><a class="des-button" download="prueba" href="Img/TecNM-CA-MC-001-A01.pdf"> TecNM-CA-MC-001-A01</a> </p> </td>
-                        </tr>
-    
-                        <tr>
-                            <td class="td-1"><b>Anexo 10:</b> Responsabilidad y Autoridad del SGC</td>
-                            <td><a class="des-button" download="prueba" href="Img/TecNM-CA-MC-001-A01.pdf"> TecNM-CA-MC-001-A01</a> </p> </td>
-                        </tr>
-    
-                        <tr>
-                            <td class="td-1"><b>Anexo 11:</b> Procesos Externos del SGC</td>
-                            <td><a class="des-button" download="prueba" href="Img/TecNM-CA-MC-001-A01.pdf"> TecNM-CA-MC-001-A01</a> </p> </td>
-                        </tr>
-    
-                        <tr>
-                            <td class="td-1"><b>Anexo 12:</b> Lista de Institutos que integran la Organización</td>
-                            <td><a class="des-button" download="prueba" href="Img/TecNM-CA-MC-001-A01.pdf"> TecNM-CA-MC-001-A01</a> </p> </td>
-                        </tr>
-                        <tr>
-                            <td class="td-1">Programa de Trabajo del SGC Multisitios</td>
-                            <td><a class="des-button" download="prueba" href="Img/TecNM-CA-MC-001-A01.pdf"> TecNM-CA-MC-001-A01</a> </p> </td>
-                        </tr>
-    
                     </table>
                 </div>
-
             </div>
 
         <!-- SECCION NOTICIAS -->
@@ -254,7 +167,7 @@
                         <h2>Empresarios respaldan a ITESCO</h2>
                         <p class="descripcion">El titular de la Canacintra en Coatzacoalcos, Ing. Emmanuel Peña Sánchez, felicitó a los 
                             alumnos y docentes por su responsabilidad...</p>
-                        <a href="#" class="post-link">Leer Mas...</a>
+                        <a  class="post-link">Leer Mas...</a>
                     </div>
                 </article>
                 <article class="post">
@@ -265,7 +178,7 @@
                         <span>21 Julio, 2022 | ITESCO</span>
                         <h2>BOLETIN D Y C</h2>
                         <p class="descripcion">En una breve reunión con el Director General del Instituto Tecnológico Superior de Coatzacoalcos – ITESCO, Dr. Bulmaro Salazar Hernández...</p>
-                        <a href="#" class="post-link">Leer Mas...</a>
+                        <a  class="post-link">Leer Mas...</a>
                     </div>
                 </article>
                 <article class="post">
@@ -277,7 +190,7 @@
                         <h2>Noticia Uno</h2>
                         <p class="descripcion">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores, voluptatum sint illo dolorum repudiandae veritatis eos, molestias numquam reprehenderit repellat, 
                             nemo laudantium...</p>
-                        <a href="#" class="post-link">Leer Mas...</a>
+                        <a  class="post-link">Leer Mas...</a>
                     </div>
                 </article>
                 <article class="post">
@@ -289,7 +202,7 @@
                         <h2>Empresarios respaldan a ITESCO</h2>
                         <p class="descripcion">El titular de la Canacintra en Coatzacoalcos, Ing. Emmanuel Peña Sánchez, felicitó a los 
                             alumnos y docentes por su responsabilidad...</p>
-                        <a href="#" class="post-link">Leer Mas...</a>
+                        <a  class="post-link">Leer Mas...</a>
                     </div>
                 </article>
             </div>
@@ -319,6 +232,7 @@
         <script src="funcion.js"></script>
         <script src="Descargas_Desp.js"></script>
         <script src="descargas2.js"></script>
+        <script src="barraNew.js"></script>
 
 
 
