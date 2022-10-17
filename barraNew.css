@@ -2,18 +2,20 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    text-align: center;
     text-decoration: none;
+    text-align: center;
 }
 
 body {
     background: #ffffff;
-    height: 100vh;
+    height: 170vh;
 }
 
 a {
     color: white;
 }
+
+
 /* BANNER PAGINA ITESCO2 */
 
 .Ban-itesco {
@@ -69,10 +71,12 @@ nav {
 
 .Ul-one {/* listo */
     display: flex;
+    z-index: 999;
     align-items: center;
 }
 
 li {
+    z-index: 999;
     list-style: none;
     cursor: pointer;
     padding: 1vw;
@@ -90,9 +94,11 @@ li:hover {
 
 .Inf-esc {
     position: relative;
+    z-index: 999;
 }
 
 .Ul-two {
+    z-index: 999;
     display: none;
     position: absolute;
     margin-top: 1.2vw;
@@ -119,6 +125,7 @@ li:hover {
 }
 
 .Ul-three {
+    z-index: 999;
     position: absolute;
     transform: translateX(95%);
     right: 0;
@@ -154,10 +161,10 @@ li:hover {
 /* SECCION NOTICIAS */
 .post-list {
     display: flex;
-    min-height: 40vh;
+    min-height: 0vh;
     align-items: center;
     justify-content: center;
-    padding: 10px 70px;
+    padding: 0px 70px;
     color: black;
     width: 100%;
 }
@@ -167,7 +174,7 @@ li:hover {
     grid-template-columns: repeat(4, 1fr); /* Num columnas */
     grid-gap: 20px;
     width: 100%;
-    margin: 70px 0;
+    margin: 0px 0;
     color: black;
 }
 
@@ -272,7 +279,7 @@ li:hover {
 .cont-menu {
     width: 1000px;
     height: 10px;
-    margin: 20px auto;
+    margin: 50px auto;
     background-color: white;
 }
 
@@ -291,6 +298,7 @@ li:hover {
     font-size: 18px;
     cursor: pointer;
     user-select: none;
+    border-radius: 20px;
 }
 
 .parrafo {
@@ -352,40 +360,268 @@ li:hover {
 }
 
 
-/* Sistema de comentarios */
+/* Comentarios Flotantes */
 
-.comentarios {
-    text-align: center;
-    background: #1b396a;
-    width: 100%;
-    align-items: center;
-    padding: 0px 0;
-    height: 200xp;
-    border-radius: 20px;
-    justify-content: center;
-}
-
-.comentarios-2 {
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    background:  #1b396a;
-    padding-left: 2vw;
-    padding: 10px 0;
-    font-size: 12px;
-}
-
-.Title-quejas {
+.Container-comentarios, .button1, .nav-quejas {
+    position: absolute;
     color: black;
 }
 
+.Container-comentarios { /* Ubicacion Boton */
+    color: black;
+    margin: auto;
+    top: 36%;
+    left: 85%;
+    margin-left: -20px;
+}
+
+#toggle {
+    display: none;
+}
+
+.button1 {
+    display: flex;
+    z-index: 990; /* Sirve para posicionar un elemento encima de otro */
+    width: 43px;
+    height: 43px;
+    background:#1b396a;
+    border-radius: 100%;
+    transition: all 0.5s ease-in-out;
+    box-shadow: 1px 3px 10px 0 rgba(0,0,0,0.3);
+    cursor: pointer;
+}
+
+.button1:before { /* Sirve para poner el + dentro del boton */
+    position: absolute;
+    top: 20px;
+    left: 9px;
+    content: '';
+    width: 25px;
+    height: 2px;
+    background: #fff;
+    transform: rotate(90deg);
+}
+
+.button1::after {
+    position: absolute;
+    top: 20px;  
+    left: 9px;
+    content: '';
+    width: 25px;
+    height: 2px;
+    background: #fff;
+}
+
+.nav-quejas {
+    color: black;
+    transform: translateY(-10%);
+    opacity: 0;
+    top: 13px;
+    left: -135px;
+    transition: all 0.5s ease-in-out;
+    background: #1b396a;
+    width: 300px;
+    border-radius: 5px;
+    transform: translateY(0%);
+    box-shadow: 2px 3px 10px 0 rgba(0,0,0,0.1);
+}
+/* Si no funciona es porque no pusiste una linea de codigo */
+
+#toggle:checked ~ .nav-quejas {
+    opacity: 1;
+    transform: translateY(10%);
+}
+
+#toggle:checked ~ .button1 {
+    transform: rotate(135deg);
+    box-shadow: 0 0 0 0 transparent;
+}
+
+.Title-quejas {
+    margin: 11px;
+    font-family: "Arial";
+    font-size: 20px;
+    color: #0a0e31;
+}
+
 .name2 {
+    font-size: 15px;
+    color: #ffffff;
     outline: none;
     border-radius: 5px;
     border: 0;
-    background-color: #616161;
-    height: 50px;
+    background-color: #ffffff;
+    width: 80%;
+    height: 30px;
+    padding: 10px 25px;
+	background: #0a0e31;
+	border-radius: 10px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.45), 0 4px 8px rgba(0, 0, 0, 0.35), 0 8px 12px rgba(0, 0, 0, 0.15);
+	font-family: "Arial";
 }
+
+.correo2 {
+    font-size: 15px;
+    color: #ffffff;
+    margin: 10px;
+    outline: none;
+    border-radius: 5px;
+    border: 0;
+    background-color: #ffffff;
+    width: 80%;
+    height: 30px;
+	padding: 10px 25px;
+	background: #0a0e31;
+	border-radius: 10px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.45), 0 4px 8px rgba(0, 0, 0, 0.35), 0 8px 12px rgba(0, 0, 0, 0.15);
+	font-family: "Arial";
+}
+
+.queja2 {
+    font-size: 15px;
+    color: #ffffff;
+    outline: none;
+    border-radius: 5px;
+    border: 0;
+    background-color: #ffffff;
+    width: 80%;
+    height: 150px;
+    margin: 10px 0; 
+	padding: 10px 25px;
+	background: #0a0e31;
+	border-radius: 10px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.45), 0 4px 8px rgba(0, 0, 0, 0.35), 0 8px 12px rgba(0, 0, 0, 0.15);
+	font-family: "Arial";
+}
+
+
+/* Boton enviar informacion */
+
+.container-1 {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.container-1 .btn {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 150px;
+	height: 30px;
+	margin: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.container-1 .btn a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: rgba(255, 255, 255, 0.05);
+	box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+	border-top: 1px solid rgba(255, 255, 255, 0.1);
+	border-radius: 30px;
+	padding: 10px;
+	letter-spacing: 1px;
+	text-decoration: none;
+	overflow: hidden;
+	color: rgb(0, 0, 0);
+	font-weight: 400px;
+    font-size: 12px;
+	z-index: 1;
+	transition: 0.5s;
+	backdrop-filter: blur(15px);
+}
+.container-1 .btn:hover a {
+	letter-spacing: 3px;
+}
+.container-1 .btn a::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 50%;
+	height: 100%;
+	background: linear-gradient(to left, rgba(255, 255, 255, 0.15), transparent);
+	transform: skewX(45deg) translate(0);
+	transition: 0.5s;
+	filter: blur(0px);
+}
+.container-1 .btn:hover a::before {
+	transform: skewX(45deg) translate(200px);
+}
+.container-1 .btn::before {
+	content: "";
+	position: absolute;
+	left: 50%;
+	transform: translatex(-50%);
+	bottom: -5px;
+	width: 30px;
+	height: 10px;
+	background: #ffffff;
+	border-radius: 10px;
+	transition: 0.5s;
+	transition-delay: 0.5;
+}
+.container-1 .btn:hover::before {
+	bottom: 0;
+	height: 50%;
+	width: 80%;
+	border-radius: 30px;
+}
+
+.container-1 .btn::after {
+	content: "";
+	position: absolute;
+	left: 50%;
+	transform: translatex(-50%);
+	top: -5px;
+	width: 30px;
+	height: 10px;
+	background: #ffffff ;
+	border-radius: 10px;
+	transition: 0.5s;
+	transition-delay: 0.5;
+}
+.container-1 .btn:hover::after {
+	top: 0;
+	height: 50%;
+	width: 80%;
+	border-radius: 30px;
+}
+.container-1 .btn:nth-child(1)::before,
+.container-1 .btn:nth-child(1)::after {
+	background: #ffffff;
+	box-shadow: 0 0 5px #ffffff, 0 0 15px #ffffff, 0 0 30px #ffffff,
+		0 0 60px #ffffff;
+}
+.container-1 .btn:nth-child(2)::before,
+.container-1 .btn:nth-child(2)::after {
+	background: #2db2ff;
+	box-shadow: 0 0 5px #2db2ff, 0 0 15px #2db2ff, 0 0 30px #2db2ff,
+		0 0 60px #2db2ff;
+}
+.container-1 .btn:nth-child(3)::before,
+.container-1 .btn:nth-child(3)::after {
+	background: #1eff45;
+	box-shadow: 0 0 5px #1eff45, 0 0 15px #1eff45, 0 0 30px #1eff45,
+		0 0 60px #1eff45;
+}
+
+
+
+
+
+
+
+
 
 @media (max-width: 840px) {
     .content {
